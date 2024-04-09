@@ -68,6 +68,7 @@ Centroid Latitude: 31.841021267605637
 ### 计算 K 值
 用轮廓分析法计算K值，此处我们只考虑坐标，不考虑权重。
 ```python
+# 轮廓系数zh.py
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
@@ -125,6 +126,7 @@ print("对应的K值:", best_k)
 ```
 将 K 值带入聚类算法
 ```python
+# 聚类算法.py
 import pandas as pd
 import numpy as np
 import openpyxl
